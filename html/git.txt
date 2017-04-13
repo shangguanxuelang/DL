@@ -1,6 +1,27 @@
-git init
-git remote add origin git@github.com:shangguanxuelang/SARE.git
-git pull origin master
-git add all
-git quick commit
-git push
+1、项目初始化
+	git init
+2、创建远程仓库，命名为 origin
+	git remote add 仓库名 仓库地址
+	git remote add origin git@github.com:shangguanxuelang/SARE.git
+3、指定本地端更新到远端的地址
+	git pull origin master
+
+	在本地新建了一个git 目录后，往往需要run这样两条命令
+	1. git remote add origin (git repository的URL）例如https://github.com/Ray-Young/Test  【指定fetch信息】
+	origin是仓库名，我们来看git pro上的一段解释：
+	假设你们团队有个地址为 git.ourcompany.com 的 Git 服务器。如果你从这里克隆，Git 会自动为你将此远程仓库命名为 origin，并下载其中所有的数据，建立一个指向它的master 分支的指针，在本地命名为 origin/master，但你无法在本地更改其数据。
+	同理，如果已经在github上创建了Repository，Github会自动将这个仓库命名为origin
+	解析这条命令，git remote add 仓库名 仓库地址
+	2. git push -set-upstream origin master  【指定push信息】
+	这条命令是指定本地端更新到远端的地址，我们只能将相应内容push到origin仓库，但我们能够指定不同的分支（分知名必须与当前分支名相同）
+	Tips:
+	1. 删除远端分支 git push origin :分知名
+	2. git push命令解析：git push 【仓库名】 【本地分知名】:【远端分支名】
+
+提交代码：
+4、将修改添加至本地缓存
+	git add all
+5、将本地缓存保存到本地仓库中，
+	git quick commit
+6、将本地仓库推送至服务器，开始准备提交到网络上
+	git push
