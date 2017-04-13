@@ -1,0 +1,6 @@
+git init
+git remote add origin git@github.com:shangguanxuelang/SARE.git
+git pull origin master
+git add all
+git quick commit
+git push
