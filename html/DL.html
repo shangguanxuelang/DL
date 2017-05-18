@@ -643,21 +643,27 @@
     <!-- 热门板 -->
     <div class="hot_board">
     	<div class="ec_slider">
-    		<ul class="ec_slider_list">
-    			<li class="ec_slider_item" style="background: url(../images/20170407114801744.jpg) 50% 0 no-repeat;width: 1920px;height: 450px;background-size:cover"></li>
-    			<li class="ec_slider_item" style="background: url(../images/20170407114801744.jpg) 50% 0 no-repeat;width: 1920px;height: 450px;background-size:cover"></li>
-    			<li class="ec_slider_item" style="background: url(../images/20170311220737835.jpg) 50% 0 no-repeat;width: 1920px;height: 450px;background-size:cover"></li>
-    			<li class="ec_slider_item" style="background: url(../images/20170311220737835.jpg) 50% 0 no-repeat;width: 1920px;height: 450px;background-size:cover"></li>
-    			<li class="ec_slider_item" style="background: url(../images/20170405190625883.jpg) 50% 0 no-repeat;width: 1920px;height: 450px;background-size:cover"></li>
-    			<li class="ec_slider_item" style="background: url(../images/20170405190625883.jpg) 50% 0 no-repeat;width: 1920px;height: 450px;background-size:cover;"></li>
-    		</ul>
-    		<div class="ec_slider_nav_1">
-    			<span></span>
-    			<span></span>
-    			<span></span>
-    			<span></span>
-    			<span></span>
-    			<span></span>
+    		<div id="ec_slider_list">
+    			<div id="ec_slider_item">
+					<img src="../images/20170407114801744.jpg" alt="">
+					<img src="../images/20170406220830523.jpg" alt="">
+					<img src="../images/20170305152160846084.jpg" alt="">
+					<img src="../images/20170305152294919491.jpg" alt="">
+					<img src="../images/20170311220737835.jpg" alt="">
+					<img src="../images/20170405190625883.jpg" alt="">
+					<img src="../images/20170407114801744.jpg" alt="">
+				</div>
+				<div id="btn-box">
+	    			<span class="active"></span>
+	    			<span></span>
+	    			<span></span>
+	    			<span></span>
+	    			<span></span>
+	    			<span></span>
+	    		</div>
+	    		<div id="nextBtn">&gt;</div>
+				<div id="prevBtn">&lt;</div>
+    			<!-- <li class="ec_slider_item" style="background: url(../images/20170405190625883.jpg) 50% 0 no-repeat;width: 1920px;height: 450px;background-size:cover;"></li> -->
     		</div>
     	</div>
     </div>
@@ -674,7 +680,7 @@
     			</a>
     		</div>
     		<div class="coupon_bd">
-    			<ul class="coupon_list">
+    			<ul class="coupon_list clearfix">
     				<li>
     					<a href="#">
 	    				<div class="coupon_item">
@@ -1149,5 +1155,7 @@
             </div>
 		</div>
 	</div>
+	<script src="../js/DL.js"></script>
+	<script src="../js/tween.js"></script>
 </body>
 </html>

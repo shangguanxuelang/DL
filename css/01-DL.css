@@ -748,53 +748,73 @@ body{
 	margin-bottom: 30px;
 	
 }
-.ec_slider{
-	position: relative;
-	overflow: hidden;
-	height: 450px;
-}
-.ec_slider_list{
+#ec_slider_list{
 	height: 450px;
 	width: 1920px;
+	position: relative;
 	overflow: hidden;
-	position: absolute;
 }
-.ec_slider_list>li{
-	/*background: url(../images/20170405190625883.jpg) 50% 0 no-repeat;
-	width: 1902px;
-	height: 450px;*/
+#ec_slider_item{
+	height: 450px;
 	position: absolute;
-	/*display: none;*/
+	top: 0;
+	left: 0;
+}
+#ec_slider_item img{
+	height: 450px;
+	width: 1920px;
 	float: left;
-	/*-webkit-background-size: cover;
-	background-size: cover;*/
+	cursor: pointer;
 }
 /*滑动圆点*/
-.ec_slider_nav_1{
-	height: 10px;
-	text-align: center;
+#btn-box{
 	position: absolute;
+	width: 100%;
+	left: 0;
 	bottom: 30px;
-	left: 50%;
-	width: 300px;
-	margin-left: -150px;
-}
-.ec_slider_nav_1 span{
-	border-radius: 10px;
-	border: 1px solid #fff;
-	display: inline-block;
-	height: 10px;
 	text-align: center;
-	line-height: 10px;
-	color: #fff;
-	margin-left: 10px;
-	width: 10px;
-	background: transparent;
-	cursor: default;
 }
-.ec_slider_nav_1 span:hover{
-	color: #fff;
+#btn-box span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
 	background: #fff;
+	line-height: 30px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+#btn-box span.active{
+	background: red;
+	color: #fff;
+}
+#nextBtn{
+	position: absolute;
+	top: 35%;
+	right: 18px;
+	height: 100px;
+	width: 50px;
+	line-height: 100px;
+	text-align: center;
+	transition: all 0.25s;
+	opacity: 0;
+	cursor: pointer;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+}
+#prevBtn{
+	position: absolute;
+	left: 0;
+	top: 35%;
+	height: 100px;
+	width: 50px;
+	line-height: 100px;
+	text-align: center;
+	transition: all 0.25s;
+	opacity: 0;
+	cursor: pointer;
+	background: rgba(0,0,0,.5);
+	color: #fff;
 }
 /*优惠中心*/
 .led{
